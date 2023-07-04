@@ -1,0 +1,250 @@
+/*navigation bar start*/
+.btn-outline-success a:hover{
+text-decoration: none;
+}
+
+/*navigation bar end*/
+/*banner start*/
+.banner {
+    padding: 6em 0 8em 0;
+    text-align: center;
+  width: 100%;
+  background-image: url(http://illusion.scene360.com/wp-content/uploads/2015/01/wes-anderson-12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+.border {
+    width: 60%;
+    margin: 0 auto;
+    height: 47px;
+    border: 2px solid #fff;
+  border-bottom: 0;
+}
+.banner h2 {
+    margin: 0;
+    font-size: 3em;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 0.5em 0 0 0;
+}
+
+.banner p {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+    line-height: 2em;
+    letter-spacing: 2px;
+  padding: 0 0 2em 0;
+}
+
+.border-bottom {
+    border-top: 0;
+    border-bottom: 2px solid #fff !important;
+
+}
+/*banner end*/
+
+
+/*slider start*/
+body{
+  background:#e6e6e6;
+}
+#slider{
+  width:80%;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+  box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+}
+
+.slide{
+  width:100%;
+  
+  display:none;
+  animation-name:fade;
+  animation-duration:1s;
+  
+}
+img{
+ width:100%; 
+}
+@keyframes fade{
+  from{opacity:0.5;}
+  to{opacity:1;}
+}
+
+.controls{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:1.5em;
+  padding:15px 10px;
+  border-radius:5px;
+  
+}
+
+.controls:hover{
+  background:white;
+  transition:0.3s;
+}
+
+.controls:active{
+  color:grey;
+}
+
+#left-arrow{
+  left:10px;
+}
+
+#right-arrow{
+  right:10px;
+}
+
+#dots-con{
+  
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  background:grey;
+  padding:8px;
+  border-radius:50%;
+  margin:10px 5px;
+}
+
+.active{
+  background:crimson;
+}
+
+@media (max-width:576px){
+  #slider{width:100%;
+  
+  }
+  
+  .controls{
+    font-size:1em;
+  }
+  
+  #dots-con{
+    display:none;
+  }
+}
+/*slider end*/
+/*footer start*/
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+/* Sticks footer to bottom */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+/* Footer main */
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-main-item ul li a:hover{
+color: black;
+}
+
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+.ft-main {
+    padding:1.25rem 1.875rem;
+    text-align: center;
+    display:block;
+    flex-wrap: nowrap;
+  }
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+  /*padding-right: 1rem;*/
+}
+
+
+/* Footer main | Newsletter form */
+@media only screen and (max-width: 660px) {
+form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+}
+form{
+  display:block;
+  /*flex-wrap:nowrap;*/
+}
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+/* Footer legal */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+/*footer end*/
